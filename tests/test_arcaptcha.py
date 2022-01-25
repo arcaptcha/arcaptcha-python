@@ -1,5 +1,5 @@
 import unittest
-from arcaptcha import Arcaptcha
+from arcaptcha_python import Arcaptcha
 
 class TestArcaptchaModule(unittest.TestCase):
 
