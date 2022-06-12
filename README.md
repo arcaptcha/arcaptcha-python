@@ -40,7 +40,7 @@ Before doing anything, please read the [documentation](https://docs.arcaptcha.ir
 True
 >>> # Display API script tag
 >>> captcha.display_tag()
-"<script src='https://widget.arcaptcha.ir/1/api.js' async defer></script>"
+"<script src='https://widget.arcaptcha.co/2/api.js' async defer></script>"
 >>> # Display captcha HTML tag
 >>> captcha.displayCaptcha()
 '<div class="arcaptcha" data-site-key="my_site_key" data-size="normal" data-theme="light" data-lang="fa"></div>'
