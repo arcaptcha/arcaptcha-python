@@ -3,7 +3,7 @@ import requests
 
 class Captcha:
 
-    VERIFY_URL = "https://api.arcaptcha.ir/arcaptcha/api/verify"
+    VERIFY_URL = "https://api.arcaptcha.co/arcaptcha/api/verify"
 
     def __init__(self, site_key, secret_key):
 
@@ -16,24 +16,24 @@ class Captcha:
         self.secret_key = secret_key
 
     # Send HTTP request to verification API url and return the status
-    def verify(self, challenge_id):
+    def verify(self, response):
         # Validate argument
-        if not challenge_id:
+        if not response:
             raise ValueError("challenge_id cannot be empty.")
 
         # Validate argument type
-        if not isinstance(challenge_id, str):
+        if not isinstance(response, str):
             raise ValueError("challenge_id must be string.")
 
         payload = {
-          "site_key": self.site_key,
-          "secret_key": self.secret_key,
-          "challenge_id": challenge_id
+          "sitekey": self.site_key,
+          "secret": self.secret_key,
+          "response": response
         }
 
         # Send POST request to api
-        response = requests.post(self.VERIFY_URL, json=payload)
-        return self.validate_response(response.content)
+        rsp = requests.post(self.VERIFY_URL, json=payload)
+        return self.validate_response(rsp.content)
 
 
 
@@ -96,4 +96,4 @@ class Captcha:
 
     # Print API script tag
     def display_tag(self):
-        return "<script src='https://widget.arcaptcha.ir/1/api.js' async defer></script>"
+        return "<script src='https://widget.arcaptcha.co/2/api.js' async defer></script>"
