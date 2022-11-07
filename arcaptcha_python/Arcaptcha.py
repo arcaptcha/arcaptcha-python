@@ -3,7 +3,7 @@ import requests
 
 class Captcha:
 
-    VERIFY_URL = "https://api.arcaptcha.co/arcaptcha/api/verify"
+    VERIFY_URL = "https://arcaptcha.co/2/siteverify"
 
     def __init__(self, site_key, secret_key):
 
