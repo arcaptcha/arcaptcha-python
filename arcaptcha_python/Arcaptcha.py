@@ -40,12 +40,7 @@ class Captcha:
     # JSON resposne body validator
     def validate_response(self, response):
         parsed = json.loads(response)
-
-        if "success" in parsed:
-            return True
-
-        return False
-
+        return parsed["success"] is True
 
 
     # Captcha with color

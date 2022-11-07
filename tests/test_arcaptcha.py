@@ -1,9 +1,15 @@
+import logging
 import unittest
+
 from arcaptcha_python import Arcaptcha
 
 class TestArcaptchaModule(unittest.TestCase):
 
   def setUp(self):
+    # Changing log level to DEBUG
+    loglevel = logging.DEBUG
+    logging.basicConfig(level=loglevel)
+
     self.site_key = "test_site_key"
     self.secret_key = "test_secret_key"
     self.good_response = "{\"success\": true}"
