@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 DESCRIPTION = 'Python package for Arcaptcha'
 LONG_DESCRIPTION = 'Validate and display captcha for Arcaptcha'
 
@@ -15,5 +15,5 @@ setup(
   long_description=LONG_DESCRIPTION,
   packages=find_packages(),
   install_requires=["requests"],
-  keywords=['captcha', 'api'],
+  keywords=['captcha', 'api', 'arcaptcha'],
 )
