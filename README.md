@@ -1,5 +1,5 @@
 <h1>
-  <img src="https://arcaptcha.ir/logo.png" width="80" />
+  <img src="https://arcaptcha.ir/_nuxt/023053fecdcdf20e40bdc993c754d487.svg" width="80" />
   Arcaptcha
   
   <!-- Badges -->
@@ -21,7 +21,7 @@ Install using pip:
 Install manually:
 
 ```bash
-git clone https://github.com/arcaptcha/arcaptcha-python.git
+git clone git@github.com:arcaptcha/arcaptcha-python.git
 
 cd arcaptcha-python
 
