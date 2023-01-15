@@ -16,7 +16,9 @@ Validate and display captcha from Arcaptcha easily in Python. ([PyPI](https://py
 ## Installation
 Install using pip:
 
-`pip install arcaptcha-python`
+```bash
+pip install arcaptcha-python
+```
 
 Install manually:
 
@@ -36,7 +38,7 @@ Before doing anything, please read the [documentation](https://docs.arcaptcha.ir
 >>> # Create a new instance of Captcha object
 >>> captcha = Arcaptcha.Captcha(site_key = "my_site_key", secret_key = "my_secret_key")
 >>> # Verify challenge
->>> captcha.verify(challenge_id = "example_challenge_id")
+>>> captcha.verify(response = "example_challenge_id")
 True
 >>> # Display API script tag
 >>> captcha.display_tag()
